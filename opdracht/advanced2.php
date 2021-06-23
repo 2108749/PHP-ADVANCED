@@ -7,6 +7,35 @@
     <title>Advanced</title>
 </head>
 <body>
+<?php
+$data = array("Voornaam"=>"Diego", "Leeftijd"=>"18", "Klas"=>"0C", "Sport"=>"Basketbal", "Woonplaats"=>"Amstelveen");
+$achtergrondkleur= $_GET["achtergrondkleur"];
+echo "<body style ='background-color:$achtergrondkleur'>";
+$tekstkleur= $_GET["tekstkleur"];
+echo "<span style='color:$tekstkleur'>";
+?>
+<table style="width: 40%;">
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</table>
+<?php function maakRij($value,$key){ ?>
+<table style="width: 40%">
+<tr>
+<td><?php echo "$value"; ?></td>
+<td><?php echo "$key"; ?></td>
+</tr>
+</table>
+<?php } ?>
+<?php
+foreach ($data as $key => $value) {
+maakRij("$key", "$value");
+ }
+ 
+?>
+</body>
+    
     
 </body>
 </html>
