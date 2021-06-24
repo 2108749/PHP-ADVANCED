@@ -24,7 +24,7 @@
     </table>
     <?php function maakRij($value, $key)
     { ?>
-        <table style="width: 40%; border: solid grey; margin: top 10px;   ">
+        <table style="width: 40%; border: solid grey; margin: top 10px; margin-right:10px ">
             <tr>
                 <td><?php echo "$value"; ?></td>
                 <td><?php echo "$key"; ?></td>
